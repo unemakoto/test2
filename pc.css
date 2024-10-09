@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    width: 1080px;
+    margin: 20px auto;
+}
+
+.header, .footer, .content, .aside {
+    background-color: #c4c4c4;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.header, .footer {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between; /* asideを右側に配置 */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column; /* sectionを縦に並べる */
+    width: 755px;
+}
+
+.content {
+    width: 100%;
+    height: 60vh; /* 各セクションの高さを指定 */
+    margin-bottom: 10px;
+}
+
+.aside {
+    width: 300px;
+    height: 420px; /* セクションより短く設定 */
+    margin-left: 25px; /* 左側のコンテンツとasideの間隔を設定 */
+}
+
+.footer {
+    width: 100%;
+}
